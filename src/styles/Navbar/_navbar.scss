@@ -17,6 +17,7 @@
     align-items: center;
 
     &__logo {
+        color: #fff;
         display: inline-flex;
         align-items: center;
         column-gap: .25rem;
@@ -33,7 +34,7 @@
     }
 
     &__menu {
-        @media screen and (max-width: 1023px) {
+        @media (max-width: 1023px) {
             position: fixed;
             bottom: 2rem;
             background-color: $container-color;
@@ -67,5 +68,18 @@
                 }
             }
         }
+    }
+
+    &__button {
+        display: none;
+    }
+}
+
+.scroll-header {
+    background-color: $body-color;
+    box-shadow: 0 1px 4px hsla(228, 4%, 15%, .1);
+
+    .nav__logo {
+        color: $first-color;
     }
 }
