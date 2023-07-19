@@ -38,6 +38,19 @@ export default function Popular() {
     },
   ];
 
+  const swiperPopular = new Swiper(".popular-container", {
+    spaceBetween: 32,
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    loop: true,
+
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
   return (
     <section className="popular-section section" id="popular">
       <div className="container">
@@ -46,10 +59,10 @@ export default function Popular() {
           Popular Residences <span>.</span>
         </h2>
 
-        <div className="popular-container">
-          <div>
+        <div className="popular-container swiper">
+          <div className="swiper-wrapper">
             {cardData.map((data, id) => (
-              <article className="popular-card">
+              <article className="popular-card swiper-slide">
                 <img
                   src={data.img}
                   alt="popular"
@@ -68,6 +81,12 @@ export default function Popular() {
                 </div>
               </article>
             ))}
+          </div>
+          <div className="swiper-button-next">
+            <i className="bx bx-chevron-right"></i>
+          </div>
+          <div className="swiper-button-prev">
+            <i className="bx bx-chevron-left"></i>
           </div>
         </div>
       </div>

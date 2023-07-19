@@ -56,3 +56,29 @@
         box-shadow: 0 12px 16px hsla(228, 66%, 45%, .1);
     }
 }
+
+.swiper-button-next,
+.swiper-button-prev {
+    top: initial;
+    bottom: 0;
+    width: initial;
+    height: initial;
+    background-color: $container-color;
+    border: 2px solid $text-color-light;
+    padding: 6px;
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    color: $first-color;
+
+    &::after {
+        content: '';
+    }
+}
+
+.swiper-button-prev {
+    left: calc(50% - 3rem);
+}
+
+.swiper-button-next {
+    right: calc(50% - 3rem);
+}
