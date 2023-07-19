@@ -1,6 +1,7 @@
 import Hero from "../components/Hero";
 import Logos from "../components/Logos";
 import Popular from "../components/Popular";
+import Value from "../components/Value";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <Logos />
       <Popular />
+      <Value />
     </main>
   );
 }
