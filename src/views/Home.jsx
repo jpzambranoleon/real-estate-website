@@ -1,4 +1,5 @@
 import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Logos from "../components/Logos";
 import Popular from "../components/Popular";
@@ -14,6 +15,7 @@ export default function Home() {
       <Value />
       <Contact />
       <Subscribe />
+      <Footer />
     </main>
   );
 }
