@@ -1,0 +1,47 @@
+@use "../global" as *;
+
+.subscribe-section {
+    padding: 2.5rem 0;
+}
+
+.subscribe-container {
+    background-color: $first-color;
+    padding: 3rem 2rem;
+    border-radius: 1.25rem;
+    border: 6px solid $first-color-light;
+    text-align: center;
+
+    &__title {
+        font-size: $h2-font-size;
+        color: #fff;
+        margin-bottom: 1rem;
+
+        @media (min-width: 1024px) {
+            font-size: 1.5rem;
+        }
+    }
+
+    &__description {
+        color: hsl(228, 90%, 92%);
+        font-size: $small-font-size;
+        margin-bottom: 2rem;
+
+        @media (min-width: 1024px) {
+            font-size: .875rem;
+        }
+    }
+
+    &__button {
+        border: 2px solid #fff;
+        background: $first-color-light;
+        font-size: $small-font-size;
+
+        &:hover {
+            background-color: $first-color;
+        }
+
+        @media (min-width: 1024px) {
+            font-size: .875rem;
+        }
+    }
+}
