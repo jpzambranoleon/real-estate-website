@@ -29,17 +29,15 @@ const cardData = [
 
 const ContactCard = ({ data }) => {
   return (
-    <div className="contact-card">
-      <div className="contact-card__box">
-        <div className="card-info">
-          {data.icon}
-          <div>
-            <h3 className="card-info__title">{data.title}</h3>
-            <p className="card-info__description">{data.description}</p>
-          </div>
-          <button className="button card-button">{data.buttonName}</button>
+    <div className="contact-card__box">
+      <div className="card-info">
+        {data.icon}
+        <div>
+          <h3 className="card-info__title">{data.title}</h3>
+          <p className="card-info__description">{data.description}</p>
         </div>
       </div>
+      <button className="button card-button">{data.buttonName}</button>
     </div>
   );
 };
@@ -68,9 +66,11 @@ export default function Contact() {
             </p>
           </div>
 
-          {cardData.map((data, id) => (
-            <ContactCard data={data} key={id} />
-          ))}
+          <div className="contact-card">
+            {cardData.map((data, id) => (
+              <ContactCard data={data} key={id} />
+            ))}
+          </div>
         </div>
       </div>
     </section>
