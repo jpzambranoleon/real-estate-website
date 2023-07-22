@@ -18,7 +18,7 @@ export default function Navbar() {
         <div className="nav__menu">
           <ul className="nav__menu__list">
             <li className="nav__item">
-              <a href="#home" className="nav__link">
+              <a href="#hero" className="nav__link">
                 <i className="bx bx-home-alt-2"></i>
                 <span>Home</span>
               </a>

@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="footer-container container grid">
         <div>
           <a href="#" className="footer-logo">
-            Holux <i className="bx bs-home-alt-2"></i>
+            Holux <i className="bx bxs-home-alt-2"></i>
           </a>
           <p className="footer-description">
             Our vision is to make all peaple <br />
