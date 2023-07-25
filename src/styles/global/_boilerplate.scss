@@ -22,6 +22,14 @@ body {
     background-color: $body-color;
     color: $text-color;
     transition: .3s; /* For animation dark mode */
+
+    @media (min-width: 2048px) {
+        zoom: 1.5;
+    }
+
+    @media (min-width: 3840px) {
+        zoom: 2;
+    }
 }
 
 h1, h2, h3 {
