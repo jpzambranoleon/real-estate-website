@@ -1,3 +1,5 @@
+import HeroImg from "../assets/images/home.jpg";
+
 export default function Hero() {
   return (
     <section className="hero-section section" id="hero">
@@ -51,7 +53,7 @@ export default function Hero() {
         <div className="hero-images">
           <div className="hero-images__orbe"></div>
           <div className="hero-images__img">
-            <img src="./src/assets/images/home.jpg" alt="" />
+            <img src={HeroImg} alt="hero-img" />
           </div>
         </div>
       </div>
