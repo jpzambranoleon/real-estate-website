@@ -36,6 +36,10 @@
     grid-template-columns: repeat(2, max-content);
     gap: 2.5rem 4rem;
 
+    @media (max-width: 320px) {
+        gap: 2.5rem;
+    }
+
     &__title {
         font-size: $h3-font-size;
         margin-bottom: 1rem;

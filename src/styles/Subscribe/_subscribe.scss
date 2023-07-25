@@ -11,6 +11,10 @@
     border: 6px solid $first-color-light;
     text-align: center;
 
+    @media (max-width: 320px) {
+        padding: 2rem 1rem;
+    }
+
     &__title {
         font-size: $h2-font-size;
         color: #fff;

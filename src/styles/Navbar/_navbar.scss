@@ -48,6 +48,10 @@
             transition: .4s;
         }
 
+        @media (max-width: 320px) {
+            padding: 1.3rem 1.5rem;
+        }
+
         &__list {
             display: flex;
             justify-content: space-between;
