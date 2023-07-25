@@ -71,11 +71,19 @@ button {
     @media (max-width: 350px) {
         padding: 3.5rem 0 1rem;
     }
+
+    @media (min-width: 1023px) {
+        padding: 7.5rem 0 1rem;
+    }
 }
 
 .section-title {
     font-size: $h2-font-size;
     margin-bottom: 1rem;
+
+    @media (min-width: 1023px) {
+        font-size: 2.5rem;
+    }
 }
 
 .section-title span {
@@ -86,6 +94,10 @@ button {
     display: block;
     font-size: $small-font-size;
     color: $second-color;
+
+    @media (min-width: 1023px) {
+        font-size: $normal-font-size;
+    }
 }
 
 .main {
@@ -157,4 +169,9 @@ button {
 /* Show Scroll Up*/
 .show-scroll {
     bottom: 8rem;
+
+    @media (min-width: 1023px) {
+        bottom: 3rem;
+        right: 3rem;
+    }
 }

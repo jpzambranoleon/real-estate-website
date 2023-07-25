@@ -7,6 +7,11 @@
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
     }
+
+    @media (min-width: 1023px) {
+        align-items: flex-start;
+        column-gap: 5rem;
+    }
 }
 
 .value-images {
@@ -24,6 +29,12 @@
             width: 236px;
             height: 280px;
         }
+
+        @media (min-width: 1023px) {
+            width: 501px;
+            height: 641px;
+            border-radius: 258px 258px 16px 16px;
+        }
     }
 
     &__img {
@@ -40,6 +51,17 @@
             width: 220px;
             height: 260px;
         }
+
+        @media (min-width: 1023px) {
+            width: 461px;
+            height: 601px;
+            border-radius: 238px 238px 12px 12px;
+        }
+
+        img {
+            max-width: initial;
+            width: 490px;
+        }
     }
 }
 
@@ -49,6 +71,11 @@
 
     @media (min-width: 1024px) {
         font-size: .875rem;
+    }
+
+    @media (min-width: 1023px) {
+        font-size: $normal-font-size;
+        margin-bottom: 2.5rem;
     }
 }
 
@@ -61,6 +88,10 @@
         border: 2px solid $border-color;
         border-radius: .5rem;
         padding: 1rem .75rem;
+
+        @media (min-width: 1023px) {
+            padding: 1.25rem 1.25rem 1.25rem 1rem;
+        }
 
         .accordion-header {
             display: flex;
@@ -82,6 +113,10 @@
 
                 @media (min-width: 1024px) {
                     font-size: .875rem;
+                }
+
+                @media (min-width: 1023px) {
+                    font-size: $normal-font-size;
                 }
             }
 
@@ -113,6 +148,11 @@
     
             @media (min-width: 1024px) {
                 font-size: .875rem;
+            }
+
+            @media (min-width: 1023px) {
+                padding-bottom: 1rem;
+                font-size: $small-font-size;
             }
         }
     }

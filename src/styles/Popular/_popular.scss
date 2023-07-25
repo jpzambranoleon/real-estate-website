@@ -2,6 +2,10 @@
 
 .popular-container {
     padding: 1rem 0 5rem;
+
+    @media (min-width: 1023px) {
+        padding-top: 3rem;
+    }
 }
 
 .popular-card {
@@ -17,6 +21,11 @@
         padding: .5rem .5rem .75rem;
     }
 
+    @media (min-width: 1023px) {
+        width: 320px;
+        padding: .75rem .75rem 2rem;
+    }
+
     &__img {
         border-radius: 1rem;
         margin-bottom: 1rem;
@@ -24,6 +33,10 @@
 
     &__data {
         padding: 0 1rem 0 .5rem;
+
+        @media (min-width: 1023px) {
+            padding: 0 .25rem 0 .75rem;
+        }
 
         &__price {
             font-size: $h2-font-size;

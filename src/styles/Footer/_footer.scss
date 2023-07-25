@@ -49,6 +49,10 @@
         grid-template-columns: repeat(3, max-content);
     }
 
+    @media (min-width: 1023px) {
+        grid-template-columns: repeat(4, max-content);
+    }
+
     &__title {
         font-size: $h3-font-size;
         margin-bottom: 1rem;
@@ -56,11 +60,19 @@
         @media (min-width: 1024px) {
             font-size: 1.25rem;
         }
+
+        @media (min-width: 1023px) {
+            margin-bottom: 1.5rem;
+        }
     }
 
     &__links {
         display: grid;
         row-gap: .5rem;
+
+        @media (min-width: 1023px) {
+            row-gap: 1rem;
+        }
 
         .link {
             font-size: $small-font-size;
@@ -101,6 +113,12 @@
     flex-direction: column;
     text-align: center;
     row-gap: 1.5rem;
+
+    @media (min-width: 1023px) {
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: 2rem;
+    }
 
     &__copy {
         font-size: $smaller-font-size;

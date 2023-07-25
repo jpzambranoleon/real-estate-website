@@ -21,6 +21,10 @@
             opacity: .2;
             transition: .3s;
 
+            @media (min-width: 1023px) {
+                height: 100px;
+            }
+
             &:hover {
                 opacity: .6;
             }
