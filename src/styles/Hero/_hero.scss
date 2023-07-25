@@ -29,6 +29,10 @@
         padding-top: 5rem;
         column-gap: 2rem;
     }
+
+    @media (min-width: 1040px) {
+        column-gap: 4rem;
+    }
 }
 
 .hero-text {
