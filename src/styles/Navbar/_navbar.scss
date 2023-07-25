@@ -52,6 +52,10 @@
             padding: 1.3rem 1.5rem;
         }
 
+        @media (min-width: 576px) {
+            width: 342px;
+        }
+
         &__list {
             display: flex;
             justify-content: space-between;

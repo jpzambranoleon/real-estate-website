@@ -58,6 +58,11 @@
             justify-content: center;
         }
 
+        @media (min-width: 576px) {
+            grid-template-columns: repeat(2, 192px);
+            justify-content: center;
+        }
+
         &__box {
             background-color: $body-color;
             border: 2px solid $border-color;

@@ -43,6 +43,10 @@
         border: 3px solid $text-color-light;
         margin-bottom: 2rem;
 
+        @media (min-width: 576px) {
+            width: 412px;
+        }
+
         i {
             font-size: 1.25rem;
             color: $first-color;

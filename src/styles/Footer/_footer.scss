@@ -40,6 +40,10 @@
         gap: 2.5rem;
     }
 
+    @media (min-width: 576px) {
+        grid-template-columns: repeat(3, max-content);
+    }
+
     &__title {
         font-size: $h3-font-size;
         margin-bottom: 1rem;
