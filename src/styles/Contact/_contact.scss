@@ -2,12 +2,21 @@
 
 .contact-container {
     row-gap: 2rem;
+
+    @media (min-width: 767px) {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
 }
 
 .contact-images {
     position: relative;
     display: flex;
     justify-content: center;
+
+    @media (min-width: 767px) {
+        order: 1;
+    }
 
     &__orbe {
         width: 266px;
@@ -61,6 +70,10 @@
         @media (min-width: 576px) {
             grid-template-columns: repeat(2, 192px);
             justify-content: center;
+        }
+
+        @media (min-width: 767px) {
+            justify-content: initial;
         }
 
         &__box {

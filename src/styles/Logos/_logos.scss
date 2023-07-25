@@ -10,6 +10,11 @@
         gap: 2rem 1rem;
     }
 
+    @media (min-width: 767px) {
+        grid-template-columns: repeat(4, max-content);
+        justify-content: center;
+    }
+
     .logos__img {
         img {
             height: 60px;

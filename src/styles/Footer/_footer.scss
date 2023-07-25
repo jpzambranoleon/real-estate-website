@@ -3,6 +3,11 @@
 .footer-container {
     row-gap: 2.5rem;
 
+    @media (min-width: 767px) {
+        grid-template-columns: repeat(2, max-content);
+        justify-content: space-between;
+    }
+
     .footer-logo {
         color: $first-color;
         font-size: $h3-font-size;

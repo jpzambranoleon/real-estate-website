@@ -15,9 +15,18 @@
 .hero-container {
     padding-top: 4rem;
     row-gap: 3.5rem;
+
+    @media (min-width: 767px) {
+        grid-template-columns: repeat(2, 1fr);
+        padding-top: 2rem;
+    }
 }
 
 .hero-text {
+    @media (min-width: 767px) {
+        padding-bottom: 2rem;
+    }
+
     &__title {
         color: #fff;
         font-size: $biggest-font-size;
@@ -114,6 +123,10 @@
         @media (max-width: 320px) {
             width: 240px;
             height: 264px;
+        }
+
+        @media (min-width: 767px) {
+            align-self: flex-end;
         }
     }
 
