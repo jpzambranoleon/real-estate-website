@@ -5,6 +5,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import Navbar from "./components/Navbar";
 import Home from "./views/Home";
+import ScrollUp from "./components/ScrollUp";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route index path="/" element={<Home />} />
       </Routes>
+      <ScrollUp />
     </Router>
   );
 }
